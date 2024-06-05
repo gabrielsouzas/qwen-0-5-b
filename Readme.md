@@ -25,19 +25,24 @@ Este projeto demonstra como extrair texto de um PDF e usar um modelo de linguage
    ```
 3. Crie um ambiente virtual e instale as dependências:
    ```sh
-   python -m venv env
-   source env/bin/activate  # No Windows use `env\Scripts\activate`
+   py -m virtualenv venv
+   env\Scripts\activate
    pip install -r requirements.txt
    ```
 
 ## 📝 Uso
 
-1. Coloque o arquivo PDF (`livro_dos_espiritos_intro.pdf`) no diretório do projeto.
-2. Inicie o script:
+1. Instale o [Ollama](https://www.ollama.com/), que é uma plataforma de inteligência artificial focada no desenvolvimento e implantação de modelos de linguagem natural avançados.
+2. Baixe o modelo Qwen 1.5 0.5B ou outro de sua preferência:
    ```sh
-   python chat_with_qwen.py
+   ollama run qwen:0.5b
    ```
-3. Digite suas perguntas no prompt de linha de comando. Digite `sair`, `exit` ou `quit` para encerrar o chat.
+3. Coloque o arquivo PDF (`livro_dos_espiritos_intro.pdf`) no diretório do projeto.
+4. Inicie o script:
+   ```sh
+   py chat.py
+   ```
+5. Digite suas perguntas no prompt de linha de comando. Digite `sair`, `exit` ou `quit` para encerrar o chat.
 
 ## 🧩 Passo a Passo
 
